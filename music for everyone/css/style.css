@@ -1,0 +1,254 @@
+/******************************
+variables
+******************************/
+:root {
+    --navPlava: #09192c; 
+    --tamnoPlava: #0b193c;
+    --pink: #f91257;
+    --bela: white;
+    --svetloSiva: #f8f8f8;
+    --fontColor: #0b193c;
+    --violet: #383c6e;
+    --font: 16px;
+    --padding: 80px 0;
+    --fontFamily: 'Montserrat', sans-serif;
+    --transition: .3s ease;
+}
+
+
+/******************************
+basic styles
+******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: var(--tamnoPlava);
+  font-family: var(--fontFamily);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bela);
+}
+a:hover {
+  color: var(--pink);
+  transition: 0.3s ease;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+span {
+    color: var(--pink);
+}
+button {
+    padding: 20px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    background: var(--pink);
+    color: var(--bela);
+    width: 250px;
+    margin-top: 20px;    
+}
+button:hover {
+    cursor: pointer;
+    background: var(--violet);
+    transition: var(--tranition);
+}
+/******************************
+nav
+******************************/
+nav {
+    background: var(--navPlava);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    margin: 30px;
+}
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/******************************
+header
+******************************/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+header article {
+    color: var(--bela);
+    
+    
+}
+header article:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    background: var(--tamnoPlava);
+    border: none;
+    padding: 20px;
+    
+}
+header article:last-child {
+    flex: 1;
+    background: var(--tamnoPlava);
+}
+/******************************
+acces
+******************************/
+.acces {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding);
+}
+.acces article:first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    padding-right: 40px;
+}
+.acces article:last-child {
+    flex: 1;
+}
+/******************************
+footer
+******************************/
+footer {
+    background: var(--navPlava);
+/*    height: 10vh;*/
+    text-align: center;
+    padding: var(--padding);
+    
+}
+footer p {
+    color: var(--bela);
+    font-size: 0.8rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+footer a {
+    margin-left: 40px;   
+}
+/******************************
+how it works
+******************************/
+.howitworks {
+    background: var(--tamnoPlava);
+    color: var(--bela);
+    text-align: left;
+    padding: var(--padding);
+}
+.howitworks .container {
+    display: flex;  
+    flex-wrap: wrap;
+}
+.howitworks .col {
+    flex: 0 0 30%;
+    margin: 20px;
+}
+.howitworks .col i {
+    color: var(--pink);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.howitworks h2 {
+    margin-left: 180px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+.howitworks p {
+    margin-top: 20px;
+/*    font-size: 2.5rem;*/
+}
+/******************************
+artists
+******************************/
+.artists {
+    padding: var(--padding);
+    text-align: center;
+}
+.artists .row:nth-child(1) {
+    display: flex;
+    margin-bottom: 20px;
+}
+.artists .row:nth-child(1) h2 {
+    flex: 0 0 50%;
+}
+.artists .row:nth-child(1) p {
+    flex: 0 0 50%;
+    justify-content: space-around;
+}
+.artists .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.artists .row:nth-child(2) .col {
+/*    display: flex;*/
+    flex: 0 0 20%;
+}
+.artists .row:nth-child(2) img {
+    display: flex;
+    width: 100%;
+    border-radius: 20%;
+}
+/******************************
+subscription
+******************************/
+.subscription {
+    padding: var(--padding);
+    text-align: center;
+}
+.subscription .row:nth-child(1) {
+    display: flex;
+    margin-bottom: 20px;
+}
+.subscription .row:nth-child(1) h2 {
+    flex: 0 0 50%;
+}
+.subscription .row:nth-child(1) p {
+    flex: 0 0 50%;
+    justify-content: space-around;
+}
+.subscription .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+.subscription .row:nth-child(2) .col {
+/*    display: flex;*/
+    flex: 0 0 20%;
+}
+.subscription .row:nth-child(2) img {
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+}
